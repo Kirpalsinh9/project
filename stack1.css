@@ -1,0 +1,136 @@
+.main{
+    
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: left;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+    animation-name: main2;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes main2 {
+    0%   {background-color:red; left:0px; top:0px;}
+    
+    50%  {background-color:blue; left:200px; top:200px;}
+    
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  
+.container{
+    height: 350px;
+    width: 700px;
+    margin: 10px 250px;
+    box-shadow: inset -2px 0px 20px 1px black;
+    background-color: rgb(143, 131, 131);
+    display: flex;
+    flex-flow: row wrap;
+    padding: 40px;
+    
+}
+ 
+.item{
+    height: 40px;
+    width: 640px;
+    margin: 15px 20px 20px 15px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.item2{
+    height: 40px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+   }
+.item3{
+    
+        height: 60px;
+        width: 640px;
+        margin: 20px 20px 20px 15px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        font-size: 17px;
+        border-radius: 15px;
+    
+    }
+ 
+ #btn1{
+    height: 40px;
+    width: 70px;
+    margin: 0px 10px 0px 40px;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 15px;
+    background-color:green;
+    border: 2px solid whitesmoke;
+    box-shadow: inset -2px 0px 20px 1px white;
+}
+#btn1:hover{
+   background-color: aqua;
+   box-shadow: inset -2px 0px 20px 1px black;
+}
+p{
+    color: white;
+}
+
+
+@media  (max-width: 419px){
+    .container{
+        margin: 0px;
+        flex: nowrap;
+        flex-flow: column;
+        overflow: scroll;
+        width: 400px;
+
+    }
+    .item{
+        font-size: 20px;
+        order: 0;
+        border-radius: 15px;
+        width: 310px;
+    }
+    .item2{
+        order: 1;
+        border-radius: 15px;
+    }
+
+    .item3{
+        order: 2;
+        display: none;
+    } 
+}
+@media (max-width:420) and (max-width:900px)
+{
+    .item{
+        order: 0;
+    }
+    .item2{
+        order: 1;
+    }
+    .item3{
+        order: 2;
+    }
+}
+
+a:hover{
+    color: aqua;
+} 
+a:link{
+    color: red;
+}
+
+a:active{
+    color: white;
+}
